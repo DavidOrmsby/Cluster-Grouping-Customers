@@ -1,17 +1,28 @@
 # machine_learning_project-unsupervised-learning
 
-## Project Outcomes
-- Unsupervised Learning: perform unsupervised learning techniques on a wholesale data dataset. The project involves four main parts: exploratory data analysis and pre-processing, KMeans clustering, hierarchical clustering, and PCA.
-### Duration:
-Approximately 1 hour and 40 minutes
-### Project Description:
-In this project, we will apply unsupervised learning techniques to a real-world data set and use data visualization tools to communicate the insights gained from the analysis.
+## Goals
+- In this project I will take data gathered on clients of a wholesale distributor and attempt to group them into clusters using unsupervised machine learning techniques.  The data is available here [Kaggle Link](https://www.kaggle.com/datasets/binovi/wholesale-customers-data-set)
 
-The data set for this project is the "Wholesale Data" dataset containing information about various products sold by a grocery store.
-The project will involve the following tasks:
+## Process
+- EDA / Data Cleaning
+    - There were a few outliers that needed removing
 
--	Exploratory data analysis and pre-processing: We will import and clean the data sets, analyze and visualize the relationships between the different variables, handle missing values and outliers, and perform feature engineering as needed.
--	Unsupervised learning: We will use the Wholesale Data dataset to perform k-means clustering, hierarchical clustering, and principal component analysis (PCA) to identify patterns and group similar data points together. We will determine the optimal number of clusters and communicate the insights gained through data visualization.
+- K-means Clustering
 
-The ultimate goal of the project is to gain insights from the data sets and communicate these insights to stakeholders using appropriate visualizations and metrics to make informed decisions based on the business questions asked."
+- Heirarchical Clustering
 
+- Feature reduction with PCA
+
+## Files
+- Unsupervised Learning - Project.ipynb
+    - All the work is done here
+
+- data / Wholesale_Data.csv
+    - A copy of the dataset used
+
+## Conclusion
+- There is a positive correlation between the amount of detergent, paper, milk, and groceries that clients order. 
+
+- Both K-means and Heirarchical Clustering identified 3 main groups that we can seperate customers into.  This can be used to create seperate marketing strategies for each of the 3 groups.
+
+- PCA identified 2 main components that can capture 90% of the variance.  In the future if we want to reduce the dimensions of our models we could use only those 2.
